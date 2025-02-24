@@ -6,6 +6,7 @@ import './index.css'
 import App from './App.jsx'
 import ErrorPage from './Components/Layouts/ErrorPage/ErrorPage';
 import Root from './Components/Layouts/Root/Root';
+import SignIn from './Components/Layouts/From/SignIn';
 
 
 
@@ -17,10 +18,15 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>,
     children: [
 
-      
           ],
 
   },
+
+
+  {
+    path: "singup",
+    element: <SignIn />
+  }
 
 ]);
 

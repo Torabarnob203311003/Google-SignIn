@@ -1,5 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import SignIn from '../From/SignIn'
 
 import Navbar from '../Navbar/Navbar'
 
@@ -12,6 +13,7 @@ function Root() {
 
             <Navbar/>
             <Outlet></Outlet>
+            <SignIn/>
           
 
         </div>
