@@ -14,21 +14,21 @@ import SignIn from './Components/Layouts/From/SignIn';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>, // This should wrap all pages, including SignIn
-    errorElement: <ErrorPage/>,
-    children: [
+    element: <Root />,
+    errorElement: <ErrorPage />,
+   
+     children : [
 
-          ],
-
+       {
+         path: "/signup",
+         element: <SignIn /> // This will render SignIn as a standalone page
+       }
+     ]
+    // No need to add SignIn here
   },
 
-
-  {
-    path: "singup",
-    element: <SignIn />
-  }
-
 ]);
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
